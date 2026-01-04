@@ -16,7 +16,7 @@ export interface HeaderProps {
  * Implements Requirements 1.1, 1.2, 1.3, 1.4, 1.5, 1.6
  */
 export const Header: React.FC<HeaderProps> = ({
-  logo,
+  logo: _logo,
   logoText = 'FitPro',
   navItems,
   stickyThreshold = 100,
