@@ -1,0 +1,198 @@
+.bmiCalculator {
+  padding: var(--spacing-20) var(--spacing-4);
+  background-color: var(--color-bg-light);
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--spacing-8);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-4);
+}
+
+.subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-8);
+  box-shadow: var(--shadow-lg);
+}
+
+.unitToggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-6);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-full);
+  padding: var(--spacing-1);
+}
+
+.unitButton {
+  flex: 1;
+  padding: var(--spacing-3) var(--spacing-6);
+  border: none;
+  background: transparent;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.unitButton:hover {
+  color: var(--color-text-primary);
+}
+
+.unitButton:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.unitButtonActive {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+.unitButtonActive:hover {
+  color: var(--color-white);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: var(--spacing-3) var(--spacing-4);
+  padding-right: var(--spacing-12);
+  border: 2px solid var(--color-gray-300);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-base);
+  transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.inputError {
+  border-color: var(--color-error);
+}
+
+.unit {
+  position: absolute;
+  right: var(--spacing-4);
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.error {
+  color: var(--color-error);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-2);
+}
+
+.calculateButton {
+  margin-top: var(--spacing-4);
+}
+
+.result {
+  margin-top: var(--spacing-6);
+  padding: var(--spacing-6);
+  background: var(--color-gray-100);
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.resultValue {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin: 0 0 var(--spacing-2);
+}
+
+.resultCategory {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin: 0 0 var(--spacing-4);
+}
+
+.categoryUnderweight {
+  color: var(--color-info);
+}
+
+.categoryNormal {
+  color: var(--color-success);
+}
+
+.categoryOverweight {
+  color: var(--color-warning);
+}
+
+.categoryObese {
+  color: var(--color-error);
+}
+
+.resultDescription {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .bmiCalculator {
+    padding: var(--spacing-12) var(--spacing-4);
+  }
+
+  .card {
+    padding: var(--spacing-6);
+  }
+
+  .title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .resultValue {
+    font-size: var(--font-size-4xl);
+  }
+}

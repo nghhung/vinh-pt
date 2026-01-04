@@ -1,0 +1,142 @@
+.pricingPage {
+  min-height: 100vh;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark, #1a1a2e) 100%);
+  padding: 6rem 1.5rem 4rem;
+  text-align: center;
+  color: white;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
+
+.comparison {
+  padding: 4rem 1.5rem;
+  background-color: var(--color-background-alt, #f8f9fa);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--color-text, #1a1a2e);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.comparisonTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.comparisonTable th {
+  background-color: var(--color-primary, #e63946);
+  color: white;
+  font-weight: 600;
+}
+
+.comparisonTable th:first-child {
+  text-align: left;
+}
+
+.comparisonTable td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+.comparisonTable th.popular,
+.comparisonTable td.popular {
+  background-color: rgba(230, 57, 70, 0.1);
+}
+
+.comparisonTable th.popular {
+  background-color: var(--color-primary-dark, #c1121f);
+}
+
+.comparisonTable tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.faq {
+  padding: 4rem 1.5rem;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.faqItem {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faqItem h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--color-primary, #e63946);
+}
+
+.faqItem p {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted, #6c757d);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .comparisonTable th,
+  .comparisonTable td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.875rem;
+  }
+}

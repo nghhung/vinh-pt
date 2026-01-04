@@ -1,0 +1,126 @@
+.about {
+  padding: var(--spacing-20) var(--spacing-4);
+  background-color: var(--color-bg-light);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-12);
+  align-items: center;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.profileImage {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  object-fit: cover;
+}
+
+.content {
+  padding: var(--spacing-4);
+}
+
+.title {
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-2);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  font-weight: var(--font-weight-medium);
+  margin: 0 0 var(--spacing-6);
+}
+
+.biography {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin: 0 0 var(--spacing-8);
+}
+
+.stats {
+  display: flex;
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-8);
+}
+
+.stat {
+  text-align: center;
+}
+
+.statValue {
+  display: block;
+  font-family: var(--font-family-heading);
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.statLabel {
+  display: block;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-8);
+  }
+
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profileImage {
+    max-width: 350px;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  .stats {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding: var(--spacing-12) var(--spacing-4);
+  }
+
+  .title {
+    font-size: var(--font-size-2xl);
+  }
+
+  .stats {
+    flex-wrap: wrap;
+    gap: var(--spacing-4);
+  }
+
+  .stat {
+    flex: 1 1 calc(50% - var(--spacing-4));
+  }
+
+  .statValue {
+    font-size: var(--font-size-2xl);
+  }
+}
